@@ -1,5 +1,5 @@
 ##############################################################################
-# $Id: 98_DEXCOM.pm 2026-10-10 $
+# $Id: 98_DEXCOM.pm v1.0.0 2026-10-10 $
 #
 # 98_DEXCOM.pm - Dexcom Share Glukosewerte direkt in FHEM
 #
@@ -92,7 +92,7 @@ sub DEXCOM_Define {
   my @a = split('[ \t]+', $def);
   return 'Syntax: define <name> DEXCOM' if (@a != 2);
 
-  $hash->{VERSION} = '2026-10-10e';
+  $hash->{VERSION} = '1.0.0';
   delete $hash->{helper}{sessionId};
   delete $hash->{helper}{accountId};
   $hash->{helper}{authBlocked} = 0;
